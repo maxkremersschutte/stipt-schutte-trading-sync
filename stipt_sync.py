@@ -8,7 +8,7 @@ import requests
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
 SHOP = os.getenv('SHOPIFY_SHOP_DOMAIN', '').replace('https://', '').replace('http://', '').strip().strip('/')
-if SHOP != 'jsmtools.myshopify.com':
+if SHOP != 'www.schuttetrading.nl':
     sys.exit('Unexpected or missing SHOPIFY_SHOP_DOMAIN')
 for key in ('SHOPIFY_CLIENT_ID', 'SHOPIFY_CLIENT_SECRET'):
     if not os.getenv(key):
